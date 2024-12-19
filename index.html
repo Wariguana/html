@@ -1,6 +1,6 @@
-<html> 
+<html>
     <head>
-        <title>明新科技大學資訊管理系</title>
+        <title>SHOSSTORY</title>
         <meta charset="utf-8">
         <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
         <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
@@ -22,29 +22,29 @@
                 text-align: center;
             }
             body {
-                background-color: #ffffff; /* 白色背景 */
-                color: #666666; /* 文字顏色 */
+                background-color: #ffffff; 
+                color: #666666;
                 font-family: Arial, sans-serif;
             }
             h1, h2, h3 {
-                color: #364E6E; /* 深藍色標題 */
+                color: #364E6E; 
             }
             a {
-                color: #0396FF; /* 藍色鏈接 */
+                color: #0396FF; 
                 text-decoration: none;
             }
             a:hover {
-                color: #0288D1; /* 懸停顏色 */
+                color: #0288D1;
             }
             .button {
-                background-color: #0396FF; /* 藍色按鈕 */
+                background-color: #0396FF;
                 color: white;
                 padding: 10px 20px;
                 border: none;
                 border-radius: 5px;
             }
             .button:hover {
-                background-color: #0288D1; /* 懸停按鈕顏色 */
+                background-color: #0288D1; 
             }
             /* Top bar */
             .top {
@@ -131,12 +131,17 @@
             }
             /* Banner */
             .banner {
-                background-image: linear-gradient(#ABDCFF, #0396FF);
-                color: white;
+                background-image: linear-gradient(to bottom, #1a1a1a, #333333);
+                color: rgb(221, 221, 221);
                 padding: 40px 20px;
+                text-align: center;
             }
             .banner h1 {
                 margin-bottom: 20px;
+                color : rgba(255, 255, 255, 0.512);
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-shadow: 1px 1px 4px rgba(35, 26, 26, 0.8);
             }
             /* Faculty section */
             .faculty {
@@ -156,16 +161,13 @@
             .faculty .teacher {
                 text-decoration: none;
                 margin: 10px;
-                /* border: 1px solid #ddd; 淺灰色外框 */
-                /* border-radius: 10px; 添加圓角，讓外框更柔和 */
-                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 添加陰影讓卡片更立體 */
             }
             .faculty .teacher img {
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
                 margin-bottom: 10px;
-                border: 3px solid #ddd; /* 為圖片添加橙色外框 */
+                border: 3px solid #ddd; 
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             }
 
@@ -180,8 +182,6 @@
             .contact {
                 background-color: #f9f9f9;
                 padding: 40px 20px;
-                /* border: 2px solid #ccc; 添加外框 */
-                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 添加陰影 */
             }
             .contact h2 {
                 font-size: 28px;
@@ -207,10 +207,18 @@
                 padding-left: 10px;
                 display: block;
             }
-            .contact .infos .right {
-                flex: 1;
-                max-width: 400px;
-                height: 200px;
+            .contact .infos .right p {
+                margin-bottom: 10px;
+                font-size: 16px;
+                color: #555;
+            }
+            .contact .infos .right a {
+                display: inline-block;
+                margin: 5px;
+                transition: transform 0.2s;
+            }
+            .contact .infos .right a:hover {
+                transform: scale(1.1);
             }
             .contact .infos .right iframe {
                 width: 100%;
@@ -218,10 +226,16 @@
                 border: none;
                 border-radius: 5px;
             }
+            .contact a img {
+                width: 50px; 
+                height: 50px; 
+                margin: 0 10px;
+            }
+
             /* Footer */
             footer {
-                background-color: #333333; /* 深灰色頁腳 */
-                color: #ffffff; /* 白色文字 */
+                background-color: #333333;
+                color: #ffffff; 
                 text-align: center;
                 padding: 20px 10px;
             }
@@ -231,81 +245,94 @@
         <div class="top">
             <div class="container">
                 <div class="logo">
-                    <img src="https://github.com/Wariguana/html/raw/main/4.png" alt="Logo">
-                    明新科技大學資訊管理系
+                    <img src="https://github.com/Wariguana/html/raw/main/LOGO.JPG" alt="Logo">
+                    SHOSSTORY
                 </div>
                 <div class="top-nav">
-                    <a href="#">明新科大</a>
-                    <a href="#">明新管理學院</a>
-                    <a href="#">登入</a>
+                    <a href="#">找商品</a>
+                    <a href="#">會員登入</a>
+                    <a href="#">購物車</a>
                 </div>
             </div>
         </div>
         <div class="nav">   
             <ul>
                 <li><a href="#home">首頁</a></li>
-                <li><a href="#introduction">系所簡介</a></li>
+                <li><a href="#introduction">賣場簡介</a></li>
                 <li class="dropdown">
-                    <a href="#faculty">成員簡介</a>
+                    <a href="#faculty">熱門品牌</a>
                     <div class="dropdown-content">
-                        <a href="#faculty">黃老師</a>
-                        <a href="#faculty">李老師</a>
-                        <a href="#faculty">應老師</a>
+                        <a href="#faculty">NIKE</a>
+                        <a href="#faculty">ADIDAS</a>
+                        <a href="#faculty">NEW BALANCE</a>
+                        <a href="#faculty">ASICS</a>
                     </div>                       
                 </li>
-                <li><a href="#about">相關資訊</a></li>
+                <li><a href="#about">聯絡我們</a></li>
             </ul>
         </div>
         <div class="slider">
             <div class="flexslider">
                 <ul class="slides">
-                    <li><img src="https://github.com/shhuangmust/html/raw/111-1/slider1.JPG" alt="Slide 1"></li>
-                    <li><img src="https://github.com/shhuangmust/html/raw/111-1/slider2.JPG" alt="Slide 2"></li>
-                    <li><img src="https://github.com/shhuangmust/html/raw/111-1/slider3.JPG" alt="Slide 3"></li>
+                    <li><img src="https://github.com/Wariguana/html/raw/main/slider1.jpg" alt="Slide 1"></li>
+                    <li><img src="https://github.com/Wariguana/html/raw/main/slider2.jpg" alt="Slide 2"></li>
+                    <li><img src="https://github.com/Wariguana/html/raw/main/slider3.jpg" alt="Slide 3"></li>
                 </ul>
             </div>
         </div>
         <div class="banner" id="introduction">
-            <h1>系所簡介</h1>
-            <h1>歷年教育部評鑑皆榮獲一等</h1>
-            <h1>明新科技大學資訊管理系</h1>
-            <h1>全國私立科大第一資管系</h1>
+            <h1>賣場簡介</h1>
+            <h1>精選全球頂級鞋履品牌</h1>
+            <h1>無論運動或正式場合</h1>
+            <h1>我們讓您走出自信每一步！</h1>
         </div>
         <div class="faculty" id="faculty">
-            <h2>師資介紹</h2>
+            <h2>熱門品牌</h2>
             <div class="container">
                 <a class="teacher" href="#">
-                    <img src="https://github.com/Wariguana/html/raw/main/1.png" alt="黃老師">
-                    <h3>黃老師</h3>
+                    <img src="https://github.com/Wariguana/html/raw/main/P1.jpg" alt="NIKE">
+                    <h3>NIKE</h3>
                 </a>
                 <a class="teacher" href="#">
-                    <img src="https://github.com/Wariguana/html/raw/main/2.png" alt="李老師">
-                    <h3>李老師</h3>
+                    <img src="https://github.com/Wariguana/html/raw/main/P3.jpg" alt="ADIDAS">
+                    <h3>ADIDAS</h3>
                 </a>
                 <a class="teacher" href="#">
-                    <img src="https://github.com/Wariguana/html/raw/main/3.png" alt="應老師">
-                    <h3>應老師</h3>
+                    <img src="https://github.com/Wariguana/html/raw/main/P2.jpg" alt="NEW BALANCE">
+                    <h3>NEW BALANCE</h3>
+                </a>        
+                <a class="teacher" href="#">
+                    <img src="https://github.com/Wariguana/html/raw/main/P4.jpg" alt="ASICS">
+                    <h3>ASICS</h3>
                 </a>        
             </div>
         </div>
         <div class="contact" id="about">
-            <h2>相關資訊</h2>
+            <h2>聯絡我們</h2>
             <div class="infos">
                 <div class="left">
-                    <b>明新科技大學管理學院大樓二樓</b>
-                    <span>304新竹縣新豐鄉新興路1號</span>
-                    <b>電話: 03-5593142</b>
-                    <span>分機: 3431、3432、3433</span>
-                    <b>傳真: 03-5593142</b>
-                    <span>分機: 3440</span>
+                    <b>SHOSSTORY </b>
+                    <span>客服專線: 0800-123-456</span>
+                    <b>服務時間: 週一至週五 10:00 - 18:00</b>
+                    <span>Email: shosstory@gmail.com</span>
                 </div>
                 <div class="right">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.185885150929!2d120.98912333466727!3d24.86332844316392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683154faa8283b%3A0x92cb1c5564a574ef!2z5piO5paw56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1536665837954" allowfullscreen></iframe>
+                    <p>追蹤我們的社群平台：</p>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="https://github.com/Wariguana/html/raw/main/D2.jpg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://github.com/Wariguana/html/raw/main/D3.jpg" alt="Facebook">
+                    </a>
+                    <a href="https://line.me" target="_blank">
+                        <img src="https://github.com/Wariguana/html/raw/main/D1.jpg" alt="LINE">
+                    </a>
                 </div>
             </div>
         </div>
+        
         <div class="footer">
-            &copy; Copyright 2022 Department of Information Management, MUST. All rights reserved. 維護者 zhangyang Hu
+            &copy; 2024 SHOSSTORY. All Rights Reserved.
         </div>
     </body>
 </html>
